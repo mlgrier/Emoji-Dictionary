@@ -46,7 +46,7 @@
         <!--View Controller-->
         <scene sceneID="Ucb-C4-3mf">
             <objects>
-                <viewController id="rVh-2d-vWG" sceneMemberID="viewController">
+                <viewController id="rVh-2d-vWG" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V3W-Gr-rEr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
