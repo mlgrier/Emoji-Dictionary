@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,10 +32,49 @@
                             <outlet property="delegate" destination="XWG-01-YRR" id="Ms8-lT-8Oo"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="rVh-2d-vWG" kind="show" identifier="ourSegue" id="gVR-yb-p7G"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4Z-uz-k87" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="145"/>
+            <point key="canvasLocation" x="239" y="143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ucb-C4-3mf">
+            <objects>
+                <viewController id="rVh-2d-vWG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V3W-Gr-rEr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKw-MY-244">
+                                <rect key="frame" x="63.5" y="40" width="248" height="272.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="228"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A shoe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct0-G5-bxj">
+                                <rect key="frame" x="10" y="636" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bba-WR-KqO" firstAttribute="trailing" secondItem="ct0-G5-bxj" secondAttribute="trailing" constant="10" id="6AI-C9-ghm"/>
+                            <constraint firstItem="ZKw-MY-244" firstAttribute="centerX" secondItem="V3W-Gr-rEr" secondAttribute="centerX" id="Cpm-uI-rlt"/>
+                            <constraint firstItem="ct0-G5-bxj" firstAttribute="leading" secondItem="bba-WR-KqO" secondAttribute="leading" constant="10" id="MLp-Ys-3ue"/>
+                            <constraint firstItem="bba-WR-KqO" firstAttribute="bottom" secondItem="ct0-G5-bxj" secondAttribute="bottom" constant="10" id="cA4-3U-J80"/>
+                            <constraint firstItem="ZKw-MY-244" firstAttribute="top" secondItem="bba-WR-KqO" secondAttribute="top" constant="20" id="mWE-EY-NVn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bba-WR-KqO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sLb-KU-po3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="144"/>
         </scene>
     </scenes>
 </document>
