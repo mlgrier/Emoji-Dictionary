@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EmojiDefinitionViewController.swift
 //  Emoji Dictionary
 //
 //  Created by Marco Grier on 8/26/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EmojiDefinitionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
