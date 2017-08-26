@@ -22,6 +22,23 @@ class EmojiDefinitionViewController: UIViewController {
 
         emojiLabel.text = emoji
         
+        // ["🥝", "🥃", "🍿", "🥓", "🏈", "👟", "🍔", "🍱", "🍘"]
+        
+        if emoji == "🥝" {
+            emojiDefinitionLabel.text = "Some food"
+        }
+        
+        if emoji == "🥃" {
+            emojiDefinitionLabel.text = "Cruise Drink"
+        }
+        
+        if emoji == "🍿" {
+            emojiDefinitionLabel.text = "Popcorn"
+        }
+        
+        if emoji == "🥓" {
+            emojiDefinitionLabel.text = "Bacon"
+        }
     }
 
 }
