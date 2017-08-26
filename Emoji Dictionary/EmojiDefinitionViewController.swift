@@ -11,8 +11,9 @@ import UIKit
 class EmojiDefinitionViewController: UIViewController {
     
     @IBOutlet weak var emojiLabel: UILabel!
-    
+    @IBOutlet weak var birthLabel: UILabel!
     @IBOutlet weak var emojiDefinitionLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     
     var emoji = ""
     

@@ -59,6 +59,18 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A shoe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct0-G5-bxj">
                                 <rect key="frame" x="10" y="636" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6c-YO-MxG">
+                                <rect key="frame" x="126.5" y="605" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79Q-PT-hbM">
+                                <rect key="frame" x="128" y="574" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,15 +78,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="t6c-YO-MxG" firstAttribute="centerX" secondItem="V3W-Gr-rEr" secondAttribute="centerX" id="34S-kX-uLQ"/>
                             <constraint firstItem="bba-WR-KqO" firstAttribute="trailing" secondItem="ct0-G5-bxj" secondAttribute="trailing" constant="10" id="6AI-C9-ghm"/>
                             <constraint firstItem="ZKw-MY-244" firstAttribute="centerX" secondItem="V3W-Gr-rEr" secondAttribute="centerX" id="Cpm-uI-rlt"/>
                             <constraint firstItem="ct0-G5-bxj" firstAttribute="leading" secondItem="bba-WR-KqO" secondAttribute="leading" constant="10" id="MLp-Ys-3ue"/>
+                            <constraint firstItem="t6c-YO-MxG" firstAttribute="top" secondItem="79Q-PT-hbM" secondAttribute="bottom" constant="10" id="Nq4-Vm-zpB"/>
+                            <constraint firstItem="79Q-PT-hbM" firstAttribute="centerX" secondItem="V3W-Gr-rEr" secondAttribute="centerX" id="WdV-32-aXz"/>
                             <constraint firstItem="bba-WR-KqO" firstAttribute="bottom" secondItem="ct0-G5-bxj" secondAttribute="bottom" constant="10" id="cA4-3U-J80"/>
                             <constraint firstItem="ZKw-MY-244" firstAttribute="top" secondItem="bba-WR-KqO" secondAttribute="top" constant="20" id="mWE-EY-NVn"/>
+                            <constraint firstItem="ct0-G5-bxj" firstAttribute="top" secondItem="t6c-YO-MxG" secondAttribute="bottom" constant="10" id="rec-tf-1m6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bba-WR-KqO"/>
                     </view>
                     <connections>
+                        <outlet property="birthLabel" destination="t6c-YO-MxG" id="2OR-CU-cHi"/>
+                        <outlet property="categoryLabel" destination="79Q-PT-hbM" id="kQJ-hO-Xhb"/>
                         <outlet property="emojiDefinitionLabel" destination="ct0-G5-bxj" id="thA-3j-XGn"/>
                         <outlet property="emojiLabel" destination="ZKw-MY-244" id="DZJ-Qp-qFA"/>
                     </connections>
