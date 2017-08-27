@@ -23,7 +23,7 @@ class EmojiDefinitionViewController: UIViewController {
         
         emojiLabel.text = emoji.theEmoji
         emojiDefinitionLabel.text = emoji.def
-        birthLabel.text = "Release Year: \(emoji.releaseDate)"
+        birthLabel.text = "Release Date: \(emoji.releaseDate)"
         categoryLabel.text = "Category: \(emoji.category)"
 
 //        emojiLabel.text = emoji
